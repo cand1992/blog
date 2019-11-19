@@ -3,8 +3,10 @@
 <% @pages.each do |page| %>
 	<%= page.title %>
 	<%= link_to 'Show Page', page_path(page) %>
+	<br />
 <% end %>
 
+<%= link_to 'New Page', new_page_path %>
 <!-- Non echoing tag, for logic -->
 <!-- <% %> -->
 <!-- Echoing tag, displays on page
